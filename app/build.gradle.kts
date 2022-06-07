@@ -53,3 +53,7 @@ android {
 //inject all the dependencies
 buckets(androidXBucket, androidXDebugBucket)
 
+dependencies {
+    implementation(project(":engine"))
+}
+
