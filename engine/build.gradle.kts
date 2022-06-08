@@ -19,7 +19,7 @@ kotlin {
         val androidTest by getting
     }
 
-    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class).all {
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
         kotlinOptions.freeCompilerArgs = listOf("-Xcontext-receivers")
     }
 }
@@ -31,4 +31,5 @@ android {
         minSdk = 26
         targetSdk = 32
     }
+    buckets(composeMainBucket)
 }

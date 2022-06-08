@@ -9,10 +9,13 @@ val androidXDebugBucket = DebugImplementationBucket(
     "androidx.compose.ui:ui-test-manifest" version composeVersion
 )
 
+val composeMainBucket = ImplementationBucket(
+    "androidx.compose.material:material" version composeVersion
+)
+
 val androidXBucket = ImplementationBucket(
     "androidx.core:core-ktx" version ktxVersion,
     "androidx.compose.ui:ui" version composeVersion,
-    "androidx.compose.material:material" version composeVersion,
     "androidx.compose.ui:ui-tooling-preview" version composeVersion,
     "androidx.compose.ui:ui-tooling" version composeVersion,
     "androidx.lifecycle:lifecycle-runtime-ktx" version lifeCycleVersion,
